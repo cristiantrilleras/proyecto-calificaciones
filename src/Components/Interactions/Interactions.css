@@ -1,0 +1,313 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+}
+
+.header-logo {
+  width: 170px;
+  height: 50px;
+  display: flex;
+  margin-left: 50px;
+}
+
+.header-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.header-nav li {
+  margin-right: 20px;
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.header-nav a:hover {
+  text-decoration: underline;
+}
+
+.interactions-container {
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas pequeñas */
+  gap: 10px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.interaction-section {
+  /* padding: 20px; */
+  text-align: center;
+}
+
+.advertisement {
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 12px;
+  margin-bottom: 15px;
+  font-family: cursive;
+}
+
+p.subtitulo{
+  font-weight: bold;
+}
+
+.rating-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.rating-button {
+  font-size: 3rem; /* Aumenta el tamaño de la fuente */
+  background-color: #fff;
+  cursor: pointer;
+  margin: 0 10px; /* Aumenta el espacio entre los botones */
+}
+
+.rating-button:hover {
+  background-color: #f0f0f0;
+}
+
+.rating-button p {
+  margin-top: 10px; /* Aumenta el espacio entre la cara y el texto */
+  color: black;
+}
+
+
+button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  background-color: #0a581b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+.Descubrir {
+  margin-top: 25px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  background-color: #0a581b; 
+  color: #ffffff; 
+  padding: 10px;
+  border-radius: 5px; 
+  text-align: center; 
+}
+
+
+.card p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  font-family: cursive;
+}
+.web{
+  background-color: #fff;
+
+}
+ .web img{
+  width: 30px;
+ }
+
+
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
+  border: 0;
+  border-radius: 0.25em;
+  background: initial;
+  background-color: green;
+  color: #fff;
+  font-size: 1em;
+}
+.carousel {
+  display: flex; /* Mostrar las imágenes en una fila */
+  justify-content: center; /* Centrar las imágenes horizontalmente */
+  overflow: hidden; /* Ocultar cualquier contenido que se desborde del contenedor */
+}
+
+.carousel img {
+  max-width: 100%; /* Ajustar el ancho máximo de las imágenes al 100% del contenedor */
+  height: 300px; /* Permitir que la altura se ajuste automáticamente para mantener la proporción */
+  width: 500px;
+  max-height: 350px; /* Establecer una altura máxima para las imágenes */
+
+}
+
+
+/* Utiliza media queries para ajustar el diseño en pantallas más pequeñas */
+@media screen and (min-width: 768px) {
+  .interactions-container {
+    grid-template-columns: 3.5fr 1.5fr; /* Vuelve al diseño de dos columnas en pantallas más grandes */
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .historial-button {
+    font-size: 0.8rem; /* Ajusta el tamaño del botón en pantallas más pequeñas */
+    padding: 8px 16px; /* Ajusta el padding del botón en pantallas más pequeñas */
+  }
+}
+
+/* .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  color: rgb(0, 0, 0);
+}
+
+.header-logo {
+  width: 200px;
+  display: flex;
+  margin-left: 50px;
+}
+
+.header-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.header-nav li {
+  margin-right: 20px;
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.header-nav a:hover {
+  text-decoration: underline;
+}
+
+
+.interactions-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.interaction-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.advertisement {
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  font-family: cursive;
+}
+
+.rating-container {
+  display: flex;
+  justify-content: center; 
+  margin-top: 10px; 
+}
+
+.rating-button {
+  font-size: 1.5rem;
+  background-color: #fff;
+  cursor: pointer;
+  margin: 0 5px; 
+}
+
+.rating-button:hover {
+  background-color: #f0f0f0;
+}
+
+.rating-button p {
+  margin-top: 5px;
+  color: black;
+}
+
+button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  background-color: #0a581b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+.imagenes_publicidad {
+  display: flex;
+  justify-content: center;
+}
+
+.imagenes_publicidad img {
+  max-width: 30%; 
+  height: auto; 
+  margin-right: 10px; 
+}
+
+
+ .Descubrir{
+
+  margin-top: 25px;
+ }
+ .card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  font-family: cursive;
+} */
